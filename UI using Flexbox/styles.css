@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    /* background-color: #333; */
+    color: white;
+}
+
+.nav-options {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.nav-options a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-options a:hover {
+    color: #00bcd4; /* Highlight color */
+    text-decoration: underline;
+}
+
+.logo img {
+    height: 80px; /* Adjust as needed */
+}
+.nav-options a img{
+    height: 20px;
+
+}
+.maincontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+   font-weight :500;
+    padding-bottom: 70px;
+}
+.maincontent h1 strong{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.maincontent button{
+    padding: 10px 5px ;
+    border-radius: 7px;
+    border-style: none;
+    background-color: rgba(55, 169, 240, 0.938);
+    color: white;
+}
+.maincontent button:hover{
+    background-color: #00bcd4;
+}
+.maincontent > div:nth-of-type(1) {
+    margin-top: 70px; /* Style for debugging */
+}
+.cards{
+    margin: 20px 40px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.3s ease; */
+
+}
+
+.cards div{
+    background-color: aliceblue;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+.cards div{
+    background-color: rgba(239, 235, 235, 0.605);
+    height: 200px;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+.cards div button{
+    background-color: rgb(139, 212, 139);
+    padding: 10px ;
+    border-radius: 16px;
+    border-style: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo {
+        margin-top: 10px;
+    }
+
+    .nav-options {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
